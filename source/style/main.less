@@ -1,0 +1,294 @@
+/*
++    App-specific LESS/CSS would go here, but to make your
++    application easier to maintain, you should try to
++    minimize the use of custom CSS.
++*/
+
+.main-view {
+}
+
+.top-bottom-panels {
+    /* IE10 Consumer Preview */ 
+background-image: -ms-radial-gradient(center, ellipse farthest-corner, #ADADAD 0%, #00FA21 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-radial-gradient(center, ellipse farthest-corner, #ADADAD 0%, #00FA21 100%);
+
+/* Opera */ 
+background-image: -o-radial-gradient(center, ellipse farthest-corner, #ADADAD 0%, #00FA21 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(radial, center center, 0, center center, 497, color-stop(0, #ADADAD), color-stop(1, #00FA21));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #ADADAD 0%, #00FA21 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: radial-gradient(ellipse farthest-corner at center, #ADADAD 0%, #00FA21 100%);
+}
+
+.today-date {
+    position: relative;
+    top: 50px;
+    width: 100%;
+}
+
+.today-date-box {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px #999;
+    -webkit-box-shadow: 0 1px 3px #999;
+    text-shadow: 0 -1px 1px #222;
+    border-bottom: 1px solid #222;
+    position: relative;
+    background: rgba(0,0,0,0.1) url("../../lib/onyx/images/gradient.png") repeat-x bottom;
+}
+
+.today-full-date {
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.today-text {
+    color: lightgray;
+}
+
+.days-container {
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.brick-work-day {
+    height: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+/*     IE10 Consumer Preview  
+    background-image: -ms-radial-gradient(left top, ellipse closest-side, #F0F0F0 0%, #00A316 100%);
+
+     Mozilla Firefox  
+    background-image: -moz-radial-gradient(left top, ellipse closest-side, #F0F0F0 0%, #00A316 100%);
+
+     Opera  
+    background-image: -o-radial-gradient(left top, ellipse closest-side, #F0F0F0 0%, #00A316 100%);
+
+     Webkit (Safari/Chrome 10)  
+    background-image: -webkit-gradient(radial, left top, 0, left top, 0, color-stop(0, #F0F0F0), color-stop(1, #00A316));
+
+     Webkit (Chrome 11+)  
+    background-image: -webkit-radial-gradient(left top, ellipse closest-side, #F0F0F0 0%, #00A316 100%);
+
+     W3C Markup, IE10 Release Preview  
+    background-image: radial-gradient(ellipse closest-side at left top, #F0F0F0 0%, #00A316 100%);*/
+
+    display: inline-block;
+    width: 5%;
+    background: rgba(10,200,30,0.7) url("../../lib/onyx/images/gradient.png") repeat-x bottom;
+    border-radius: 3px;
+    //border: 1px solid #707070;
+    border: 1px solid rgba(15, 15, 15, 0.2);
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+    
+    opacity: 0.7;
+}
+
+.brick-day-off {
+    height: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: rgba(0,0,0,0.1) url("../../lib/onyx/images/gradient.png") repeat-x bottom;
+    display: inline-block;
+    width: 5%;
+    
+    border-radius: 3px;
+    //border: 1px solid #707070;
+    border: 1px solid rgba(15, 15, 15, 0.2);
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+    opacity: 0.7;
+}
+
+.brick-today-anim {
+    background: rgba(0,0,0,0.4) url("../../lib/onyx/images/gradient.png") repeat-x bottom;
+}
+
+.brick-today{
+    height: 20px;
+    width: 6%;
+    margin: 0;
+    vertical-align: sub;
+    opacity: 1;
+    
+    -webkit-transition: all 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: all 0.5s;
+}
+
+.set-work-days {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.set-work-days-box {
+    cursor: pointer;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px #999;
+    -webkit-box-shadow: 0 1px 3px #999;
+    text-shadow: 0 -1px 1px #222;
+    border-bottom: 1px solid #222;
+    position: relative;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    background: purple url("../../lib/onyx/images/gradient.png") repeat-x bottom;
+}
+
+.info-date {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.info-date-box {
+    width: 250px;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px #999;
+    -webkit-box-shadow: 0 1px 3px #999;
+    text-shadow: 0 -1px 1px #222;
+    border-bottom: 1px solid #222;
+    position: relative;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
+    background: rgba(0,0,0,0.6) url("../../lib/onyx/images/gradient.png") repeat-x bottom;
+}
+
+.goto-reseter {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.goto-reseter-box {
+    cursor: pointer;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px #999;
+    -webkit-box-shadow: 0 1px 3px #999;
+    text-shadow: 0 -1px 1px #222;
+    border-bottom: 1px solid #222;
+    position: relative;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    background: purple url("../../lib/onyx/images/gradient.png") repeat-x bottom;
+}
+
+.reseter {
+    text-align: center;
+    text-shadow: 0 -1px 1px #222;
+    color: #fff;
+}
+
+.go-back {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.go-back-box {
+    cursor: pointer;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px #999;
+    -webkit-box-shadow: 0 1px 3px #999;
+    text-shadow: 0 -1px 1px #222;
+    border-bottom: 1px solid #222;
+    position: relative;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    /* IE10 Consumer Preview */ 
+    background-image: -ms-radial-gradient(left top, ellipse closest-side, #F0F0F0 0%, #00A316 100%);
+
+    /* Mozilla Firefox */ 
+    background-image: -moz-radial-gradient(left top, ellipse closest-side, #F0F0F0 0%, #00A316 100%);
+
+    /* Opera */ 
+    background-image: -o-radial-gradient(left top, ellipse closest-side, #F0F0F0 0%, #00A316 100%);
+
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(radial, left top, 0, left top, 0, color-stop(0, #F0F0F0), color-stop(1, #00A316));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-radial-gradient(left top, ellipse closest-side, #F0F0F0 0%, #00A316 100%);
+
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: radial-gradient(ellipse closest-side at left top, #F0F0F0 0%, #00A316 100%);
+}
+
+.submit-btn {
+    position: relative;
+    top: 25px;
+    padding: 5px;
+    width: 150px;
+    font-size: 2em;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.work-days-setter, .free-days-setter {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bolder;
+}
+
+.work-days-setter {
+    color: darkgreen;
+}
+
+.free-days-setter {
+    color: rgba(0,0,0,0.45);
+}
+
+.day-setter {
+    text-align: center;
+}
+
+.author {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+    float: right;
+    color: rgba(0,0,0,0.5);
+    position: absolute;
+    right: 0;
+}
+
+.author:hover {
+    font-weight: bolder;
+    color: darkgreen;
+}
